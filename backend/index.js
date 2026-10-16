@@ -215,3 +215,8 @@ app.listen(PORT, () => {
   mongoose.connect(uri);
   console.log("DB started!");
 });
+
+
+app.get("/home", async (req, res) => {
+    res.send("server is Listening");
+})
